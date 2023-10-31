@@ -1,0 +1,397 @@
+:root {
+    --primary-color: hsl(322, 100%, 66%);
+    --font-color: #585858;
+    --box-shadow-color: #aeaeae; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header.main-header {
+    height: 100vh;
+    width: 100%;
+    background: url(./images/bg-hero-desktop.svg) no-repeat center center/cover;
+    padding: 8rem;
+}
+
+header.main-header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1.3rem;
+    width: 12%;
+    background-color: #fff;
+    color: black;
+    font-size: 1.8rem;
+    box-shadow: .1rem .1rem 1.5rem var(--box-shadow-color);
+    text-align: center;
+    border-radius: 3rem;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: transform .4s ease;
+}
+
+.header-section-1 {
+    width: 100%;
+    display: flex;
+    height: 85%;
+}
+
+.header-section-1 .header-div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 35%; */
+    flex: .8;
+    padding: 8rem 0;
+    padding-right: 6rem;
+}
+
+.header-section-1 .header-div-1 h1 {
+    font-size: 4.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.header-section-1 .header-div-1 p {
+    font-size: 2.2rem;
+    color: var(--font-color);
+}
+
+a.pink-btn {
+    width: 45%;
+    box-shadow: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.header-section-1 .header-div-2 {
+    /* width: 50%; */
+    flex: .9;
+    background: url(./images/illustration-mockups.svg) no-repeat center center/cover;
+}
+
+main.container {
+    height: 190vh;
+    width: 100%;
+    padding: 15rem 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* General container's styling */
+.content-container {
+    width: 100%;
+    height: 70%;
+    box-shadow: .1rem .1rem 1.5rem var(--box-shadow-color);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.content-container:hover {
+    transform: scale(1.02);
+    transition: transform .5s ease ;
+}
+
+.content-container .content-section-1 {
+    padding: 8rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    order: 0;
+}
+
+.content-container .content-section-1 h2 {
+    font-size: 2.5rem;
+}
+
+.content-container .content-section-1 p {
+    font-size: 1.6rem;
+    color: var(--font-color);
+}
+
+.content-section-2 {
+    width: 70%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.content-div-1 .content-section-2 .bg-image-1{
+    background: url(./images/illustration-grow-together.svg) no-repeat center center/contain;
+    height: 100%;
+}
+
+.content-div-2 .content-section-2 .bg-image-2 {
+    background: url(./images/illustration-flowing-conversation.svg) no-repeat center center/contain;
+    height: 100%;
+    order: -1;
+    margin-left: -8rem;
+    margin-right: 3rem;
+}
+
+.content-div-2 .content-section-1 {
+    margin-right: 5rem;
+}
+
+.content-div-3 .content-section-2 .bg-image-3 {
+    background: url(./images/illustration-your-users.svg) no-repeat center center/contain;
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(30, 48, 80);
+    padding: 15rem;
+    padding-top: 20rem;
+    padding-bottom: 7rem;
+    color: #fff;
+    font-size: 1.4rem;
+    position: relative;
+    margin-top: 18rem;
+}
+
+.logo {
+    margin-bottom: 5rem;
+}
+
+.footer-content-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+.footer-content-div .footer-content-1 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer-content-1 .cont-div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.footer-content-div ul li {
+    list-style: none;
+    line-height: 4rem;
+}
+
+.footer-content-div ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+.footer-content-div ul li > a:hover {
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
+
+.footer-content-4 {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-content-4  .social-media-icons {
+    border: .1rem solid #fff;
+    height: 3.5rem;
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer-div > p {
+    width: 100%;
+    text-align: right;
+}
+
+aside {
+    position: absolute;
+    background-color: #fff;
+    width: 50vw;
+    height: 30vh;
+    box-shadow: .1rem .1rem 1.5rem var(--box-shadow-color);
+    top: calc(50% - 69%);
+    left: 26.3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 1rem;
+}
+aside h3 {
+    font-size: 3rem;
+    color: #333;
+}
+
+/* Responsiveness: Mobile View */
+@media (max-width: 768px) {
+    header.main-header {
+        background: url(./images/bg-hero-mobile.svg) no-repeat center center/cover;
+        padding: 3rem;
+    }
+
+    header.main-header nav {
+        margin-bottom: 8rem;
+    }
+
+    .nav > div > img {
+        width: 60%;
+    }
+
+    .btn {
+        width: 35%;
+        padding: .9rem;
+        font-size: 1.6rem;
+    }
+    
+    .header-section-1 {
+        flex-direction: column;
+        height: 105vh;
+    }
+
+    .header-section-1 .header-div-1 {
+        text-align: center;
+        padding: 1.2rem;
+        align-items: center;
+        margin-bottom: 5.5rem;
+        flex: .5;
+    }
+
+    .header-section-1 .header-div-1 h1 {
+        font-size: 3.4rem;
+    }
+
+    .header-section-1 .header-div-1 p {
+        font-size: 2.1rem;
+    }
+
+    a.pink-btn {
+        width: 75%;
+        padding: 1.3rem;
+    }
+
+    .header-section-1 .header-div-2 {
+        flex: .3;
+        /* height: 100%; */
+    }
+
+    main.container {
+        margin-top: 5rem;
+        padding: 10rem 3.5rem;
+        height: 200vh;
+    }
+
+    /* General container's styling for mobile view.*/
+    .content-container {
+        height: 80%;
+        flex-direction: column;
+    }
+
+    .content-container .content-section-1 {
+        padding: 5rem;
+        width: 100%;
+        text-align: center;
+        height: 50%;
+        order: 1;
+        padding-top: 2rem;
+    }
+
+    .content-container .content-section-1 h2 {
+        font-size: 2.1rem;
+    }
+
+    .content-container .content-section-1 p {
+        font-size: 1.5rem;
+    }
+
+    .content-section-2 {
+        width: 100%;
+        height: 100%;
+        order: 0;
+    }
+
+    .content-div-2 .content-section-2 .bg-image-2, 
+    .content-div-2 .content-section-1 {
+        margin: 0;
+    }
+
+    /* The aside button on the footer */
+    aside {
+        width: 90vw;
+        left: 5.5%;
+        top: -13.1%;
+    }
+
+    aside h3 {
+        font-size: 2.5rem;
+    }
+
+    aside a.btn {
+        width: 55%;
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .footer-content-div {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .footer-content-div .footer-content-1 {
+        width: 100%;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .footer-content-1 .cont-div {
+        gap: 3rem;
+    }
+    
+    .footer-content-4 {
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .footer-div > p {
+        text-align: center;
+    }
+} 
